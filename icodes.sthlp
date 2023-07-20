@@ -1,7 +1,7 @@
 {smcl}
-{* *! version 1.0  Published July 20, 2023}{...}
+{* *! version 1.1  Published July 20, 2023}{...}
 {p2colset 2 12 14 28}{...}
-{right: Version 1.0 }
+{right: Version 1.1 }
 {p2col:{bf:icodes} {hline 2}}Create numeric SIC and Fama-French industry codes{p_end}
 {p2colreset}{...}
 
@@ -21,6 +21,7 @@ where {it:sic} is a string or numeric variable containing 4 digit SIC codes
 {synoptline}
 {synopt:{opt suffix(text)}}append {it:text} to variable names created by {opt icodes}{p_end}
 {synopt:{opt short}}use short value labels for Fama-French codes{p_end}
+{synopt:{opt nolabel}}use no value labels for Fama-French codes{p_end}
 {synopt:{opt nomissing}}put unmapped SICs in "other" category (explained below in {bf:Remarks}){p_end}
 {synoptline}
 
@@ -75,4 +76,15 @@ Zachary King{break}
 Email: {browse "mailto:zacharyjking90@gmail.com":zacharyjking90@gmail.com}{break}
 Website: {browse "www.zach.prof":zach.prof}{break}
 SSRN: {browse "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2623799":https://papers.ssrn.com}
+{p_end}
+
+
+{title:Acknowledgements}
+
+{pstd}
+I thank the following individuals for helpful feedback and suggestions on {opt icodes}, this help file, and the associated documentation on {browse "www.zach.prof":zach.prof}:{p_end}
+
+{pstd}
+Mayer Liang {break}
+Jessica Nylen
 {p_end}
