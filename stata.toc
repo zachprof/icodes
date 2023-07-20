@@ -1,0 +1,4 @@
+v 3
+d Stata code by Zachary King
+
+p icodes Create numeric SIC and Fama-French industry codes

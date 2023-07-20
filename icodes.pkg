@@ -1,0 +1,30 @@
+v 3
+d {bf:icodes}: Create numeric SIC and Fama-French industry codes
+d 
+d {bf:icodes} creates industry classifications for empirical analysis by converting 4 digit SIC codes in
+d widely-used databases, such as CRSP and Compustat, to:
+d
+d      (1) 1, 2, 3, and 4 digit numeric SIC codes, and
+d      (2) every Fama-French industry code (5, 10, 12, 17, 30, 38, 48, and 49).
+d
+d After installation, type {bf:help icodes}
+d
+d Additional information and illustrative examples provided at {browse "www.zach.prof":zach.prof}
+d 
+d Author: Zachary King
+d 
+d Version: 1.0
+d Distribution-Date: July 20, 2023
+d License: MIT
+d 
+F icodes.ado
+F icodes.sthlp
+F ff5sics.dta
+F ff10sics.dta
+F ff12sics.dta
+F ff17sics.dta
+F ff30sics.dta
+F ff38sics.dta
+F ff48sics.dta
+F ff49sics.dta
+F randomSICcodes.dta
