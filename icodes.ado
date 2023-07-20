@@ -1,5 +1,5 @@
 *! Title:       icodes.ado   
-*! Version:     1.0 published July 20, 2023
+*! Version:     1.1 published July 20, 2023
 *! Author:      Zachary King 
 *! Email:       zacharyjking90@gmail.com
 *! Description: Convert SIC codes to numeric 1, 2, 3, and 4 digit SIC codes and
@@ -13,7 +13,14 @@ program def icodes
 	
 	* Define syntax
 	
-	syntax varlist(max=1) [, suffix(string) SHORT NOMISSING]
+	syntax varlist(max=1) [, suffix(string) SHORT NOLABEL NOMISSING]
+	
+	* Ensure short and nolabel options not used in combination
+	
+	if "`short'" != "" & "`nolabel'" != "" {
+		di as error "only one of {bf:short} and {bf:nolabel} options is allowed"
+		exit 198
+	}
 	
 	* Determine if any variables already exist
 	
@@ -130,7 +137,7 @@ program def icodes
 			label define ff`ffn'`suffix'label `i' "`labl`i''", modify
 		}
 		
-		label values ff`ffn'`suffix' ff`ffn'`suffix'label
+		if "`nolabel'" == "" label values ff`ffn'`suffix' ff`ffn'`suffix'label
 		label variable ff`ffn'`suffix' "Fama-French `ffn' Industry Code"
 	
 	}
