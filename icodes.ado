@@ -1,7 +1,7 @@
 *! Title:       icodes.ado   
 *! Version:     1.1 published July 20, 2023
 *! Author:      Zachary King 
-*! Email:       zacharyjking90@gmail.com
+*! Email:       me@zach.prof
 *! Description: Convert SIC codes to numeric 1, 2, 3, and 4 digit SIC codes and
 *!              numeric Fama-French industry codes
 
