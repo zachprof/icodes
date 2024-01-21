@@ -73,7 +73,7 @@ Examples provided at {browse "www.zach.prof":zach.prof}
 
 {pstd}
 Zachary King{break}
-Email: {browse "mailto:zacharyjking90@gmail.com":zacharyjking90@gmail.com}{break}
+Email: {browse "mailto:me@zach.prof":me@zach.prof}{break}
 Website: {browse "www.zach.prof":zach.prof}{break}
 SSRN: {browse "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2623799":https://papers.ssrn.com}
 {p_end}
